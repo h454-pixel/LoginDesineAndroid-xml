@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F5">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="match_parent"
+            android:src="@drawable/androidlogin"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"></ImageView>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_2"
+        android:layout_width="220dp"
+        android:layout_height="480dp"
+        android:background="@drawable/desine2"
+        app:layout_constraintTop_toBottomOf="@+id/relative_1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_log"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="101dp"
+            android:gravity="center"
+            android:text="login"
+            android:textSize="30dp"></TextView>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/desine_21"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/relative_1"
+        tools:layout_editor_absoluteX="25dp"
+       >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:drawableRight="@drawable/ic_baseline_email_24"
+            android:hint="Email"></EditText>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:drawableRight="@drawable/ic_baseline_lock_open_24"
+            android:hint="Password"></EditText>
+
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget password ?"
+            android:gravity="right"
+            android:textSize="20dp"></TextView>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tbtn_login"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/desine"
+        android:gravity="center"
+        android:text="LOG IN "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/linear_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_2"></TextView>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+     >
+
+
+        <TextView
+            android:id="@+id/txt_dont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Dont have any id "
+            android:textSize="20dp"
+          ></TextView>
+
+
+        <TextView
+            android:id="@+id/txt_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sign up"
+            android:layout_weight="1"
+            android:textColor="#D60D51"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

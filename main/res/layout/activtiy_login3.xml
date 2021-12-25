@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/blue_1"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/ic_wave_haikei__2_"
+        app:layout_constraintTop_toBottomOf="@+id/view_1"
+         />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_streetview_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:ems="6"
+        android:gravity="center"
+        android:text="Already have an account ?"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    <TextView
+        android:id="@+id/txt_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:ems="6"
+        android:gravity="center"
+        android:text="Log in "
+        android:textColor="@color/blue_1"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="206dp"
+       app:layout_constraintTop_toBottomOf="@id/view_2"></TextView>
+
+
+    <EditText
+        android:id="@+id/ed_txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/desine_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_log"
+     ></EditText>
+
+
+    <EditText
+        android:id="@+id/ed_txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/ed_txt"
+        android:drawableRight="@drawable/ic_baseline_lock_open_24"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/desine_3"
+        android:hint="Password"
+       ></EditText>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/tbtn_login"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/desine"
+        android:gravity="center"
+        android:text="LOG IN "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ed_txt_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ></TextView>
+
+
+    <View
+       app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave_haikei__1_"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

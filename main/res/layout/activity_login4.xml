@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/natur_escene"
+    android:orientation="vertical">
+
+
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:background="#7F000000"
+       android:orientation="vertical">
+
+
+
+       <EditText
+           android:id="@+id/ed_txt"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="200dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:drawableRight="@drawable/ic_baseline_email_24"
+           android:hint="Email"
+           android:textColorHint="#ffff"
+           android:paddingLeft="10dp"
+           android:paddingEnd="10dp"
+           android:background="@drawable/desine_4"
+           ></EditText>
+
+
+
+
+       <EditText
+           android:id="@+id/ed_txt_2"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_margin="30dp"
+           android:textColorHint="#ffff"
+           android:background="@drawable/desine_4"
+           android:drawableRight="@drawable/ic_baseline_lock_open_24"
+           android:paddingLeft="10dp"
+           android:paddingEnd="10dp"
+           android:inputType="textPassword"
+           android:hint="Password"
+           ></EditText>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keep me sign in"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            ></CheckBox>
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="30dp"
+              android:fontFamily="cursive"
+              android:background="@drawable/desine_4"
+              android:text="Log in"
+              android:layout_marginRight="30dp"></Button>
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
